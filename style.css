@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.gallery-wrap{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+.gallery{
+    display: flex;
+    /* flex-direction: row; */
+    width: 900px;
+    overflow-x: scroll;
+}
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+    grid-gap: 10px;
+    flex: none;
+}
+.gallery div img{
+    width: 100%;
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+.clue{
+    width: 150px;
+    /* Adjust this value to change the width */
+    height: 50px;
+    /* Adjust this value to change the height */
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+.clue a{
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
